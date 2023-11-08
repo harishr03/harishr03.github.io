@@ -2,6 +2,7 @@
 name: Building Inventory Visualization
 tools: [Python, HTML, Altair]
 description: This is a project that includes visualizations made with the buildings inventory dataset. 
+image: assets/pngs/cars.png
 custom_js:
  - vega.min
  - vega-lite.min
