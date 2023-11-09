@@ -22,12 +22,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="I am definitely not a corgi!">
-  <meta property="og:image" content="https://source.unsplash.com/300x300/?corgi&derpy">
+  <meta property="og:title" content="Building Inventory Visualization">
+  <meta property="og:description" content="This is a project that includes visualizations made with the buildings inventory dataset.">
+  <meta property="og:image" content="assets/pngs/scatter1.png">
 
-  <title>Projects</title>
-  <meta name="description" content="I am definitely not a corgi!">
+  <title>Building Inventory Visualization</title>
+  <meta name="description" content="This is a project that includes visualizations made with the buildings inventory dataset.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -73,43 +73,40 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="building-inventory-dataset-visualization">Building Inventory Dataset Visualization</h1>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-vega-lite-project" class="project card text-themed"><img id="vega-lite-example-project-img" class="card-img-top" src="/assets/pngs/cars.png" alt="Vega Lite Example Project" /><div class="card-body">
-      <h5 id="vega-lite-example-project-name" class="card-title">Vega Lite Example Project
-      </h5>
-      <p id="vega-lite-example-project-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="vega-lite-example-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<h3 id="plot-1-visualization-of-square-footage-and-total-floors-of-a-building">Plot 1: Visualization of square footage and total floors of a building</h3>
+
+<vegachart schema-url="/assets/json/scatter1.json" style="width: 100%"></vegachart>
+
+<h3 id="write-up-for-plot-1">Write-Up for Plot 1</h3>
+
+<p>This scatter plot visually illustrates the relationship between the floor area of a building and its corresponding square footage. Additionally, it provides insight into the construction years of these buildings, shedding light on whether older structures tend to exhibit more floors and square footage in comparison to newer ones. The choice of a scatter plot was deliberate, as it offers an effective means of identifying outliers and discerning patterns among these three key variables. The ‘inferno’ color scheme was selected for its consistency in color, making it easier to distinguish outliers due to its darker shades at the lower end of the spectrum.</p>
+
+<h3 id="plot-2-interactive-plot-of-congresss-members-congress-district-and-rep-dist">Plot 2: Interactive plot of Congresss members, Congress District and Rep Dist.</h3>
+
+<vegachart schema-url="/assets/json/altair_mobility_local_dashboard.json" style="width: 100%"></vegachart>
+
+<h3 id="write-up-for-plot-2">Write-Up for Plot 2</h3>
+
+<p>This interactive plot combines two distinct chart types to provide insightful information. The first chart takes the form of a rectangular grid, displaying Congress members alongside their corresponding Congressional Districts. The second chart adopts a bar chart format to effectively illustrate Representative Districts and their corresponding record counts. The chart’s height is set at 200 to ensure full visibility of all Congress members’ names.</p>
+
+<p>The choice of a bar chart is deliberate, as it accurately reveals the Representative District with the highest count for each selection made in the first chart. The interactive nature of this chart enhances its appeal and clarity, particularly considering the substantial volume of data it conveys. In essence, it consolidates what would typically require multiple plots into a single, comprehensive visualization.</p>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/harishr03/harishr03.github.io/blob/main/assets/json/altair_mobility_local_dashboard.json">
+The Data
+</a>
 </div>
 
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/homework8" class="project card text-themed"><img id="building-inventory-visualization-img" class="card-img-top" src="/assets/pngs/scatter1.png" alt="Building Inventory Visualization" /><div class="card-body">
-      <h5 id="building-inventory-visualization-name" class="card-title">Building Inventory Visualization
-      </h5>
-      <p id="building-inventory-visualization-desc" class="card-text">This is a project that includes visualizations made with the buildings inventory dataset.</p>
-      <p id="building-inventory-visualization-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">Altair</span></p>
-    </div>
-  </a>
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/harishr03/harishr03.github.io/blob/main/python_notebooks/HW8.ipynb">
+The Analysis
+</a>
 </div>
 
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
-
-  
-
-  
 </div>
-
-
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -152,6 +149,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/just charts.js' type="text/javascript"></script>
+  
 
 
 
