@@ -2,7 +2,7 @@
 name: Building Inventory Visualization
 tools: [Python, HTML, Altair]
 description: This is a project that includes visualizations made with the buildings inventory dataset. 
-image: assets/pngs/cars.png
+image: assets/pngs/scatter1.png
 custom_js:
  - vega.min
  - vega-lite.min
@@ -15,7 +15,7 @@ custom_js:
 
 ### Plot 1: Visualization of square footage and total floors of a building 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/scatter1.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ https://harishr03.github.io }}/assets/json/scatter1.json" style="width: 100%"></vegachart>
 
 ### Write-Up for Plot 1
 
@@ -23,7 +23,7 @@ This scatter plot visually illustrates the relationship between the floor area o
 
 ### Plot 2: Interactive plot of Congresss members, Congress District and Rep Dist. 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/altair_mobility_local_dashboard.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ https://harishr03.github.io }}/assets/json/altair_mobility_local_dashboard.json" style="width: 100%"></vegachart>
 
 ### Write-Up for Plot 2
 
